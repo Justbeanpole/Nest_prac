@@ -1,0 +1,58 @@
+{
+  "compilerOptions": {
+    // "types": ["node"],
+    // "module": "commonjs",
+    // // "moduleResolution": "commonjs",
+    // // "resolvePackageJsonExports": true,
+    // "esModuleInterop": true,
+    // "isolatedModules": true,
+    // "declaration": true,
+    // "removeComments": true,
+    // "emitDecoratorMetadata": true,
+    // "experimentalDecorators": true,
+    // "allowSyntheticDefaultImports": true,
+    // "target": "ES2023",
+    // "sourceMap": true,
+    // "outDir": "./dist",
+    // "baseUrl": "./",
+    // "incremental": true,
+    // "skipLibCheck": true,
+    // "strictNullChecks": false,
+    // "forceConsistentCasingInFileNames": true,
+    // "noImplicitAny": false,
+    // "strictBindCallApply": false,
+    // "noFallthroughCasesInSwitch": false,
+    // "paths": {
+    //   "@src/*": ["src/*"]
+    // }
+
+    "strict": false, // 모든 엄격한 타입 검사 활성화 (null, any, 함수, 객체 타입 등)
+    "noImplicitAny": false, // 명시적으로 타입을 지정하지 않으면 `any` 타입을 사용할 수 없음
+    "module": "commonjs", // 모듈 시스템을 CommonJS로 설정 (Node.js 환경에 적합)
+    "declaration": true, // `.d.ts` 선언 파일을 생성 (타입 정의를 별도로 제공)
+    "removeComments": true, // 컴파일된 JavaScript 파일에서 주석을 제거
+    "emitDecoratorMetadata": true, // 데코레이터 메타데이터를 생성 (주로 NestJS 등에서 사용)
+    "experimentalDecorators": true, // 실험적 데코레이터 기능을 활성화 (타입스크립트 데코레이터 사용)
+    "allowSyntheticDefaultImports": true, // 기본 내보내기(default export)가 없는 모듈에서 `import` 시 기본 내보내기처럼 동작하도록 허용
+    "target": "es2017", // ECMAScript 버전 2017으로 컴파일 (Async/Await 등 ES2017 기능 사용 가능)
+    "sourceMap": true, // `.map` 파일을 생성하여 디버깅 시 소스 맵을 사용할 수 있게 함
+    "outDir": "./dist", // 컴파일된 JavaScript 파일이 저장될 디렉토리
+    "baseUrl": "./", // 모듈 해석의 기준이 되는 디렉토리
+    "incremental": true, // 증분 컴파일을 활성화하여 컴파일 성능을 개선
+    "skipLibCheck": true, // 라이브러리 타입 파일의 검사 건너뛰기 (성능 향상)
+    "strictNullChecks": false, // `null` 및 `undefined`에 대한 엄격한 타입 검사를 비활성화
+    "strictBindCallApply": false, // `bind`, `call`, `apply`에 대한 타입 검사를 엄격하게 설정
+    "forceConsistentCasingInFileNames": true, // 파일 시스템에서 파일 이름의 대소문자 일관성 강제
+    "noFallthroughCasesInSwitch": true, // `switch` 문에서 `case` 문이 빠지는 것을 방지
+    "esModuleInterop": true, // ES6 모듈과 CommonJS 모듈 간의 호환성을 높임
+    "resolveJsonModule": true, // `.json` 파일을 모듈로 가져올 수 있도록 허용
+    "noUnusedParameters": false, // 사용되지 않는 함수 파라미터에 대해 오류 발생
+    "skipDefaultLibCheck": true, // 기본 라이브러리 타입 파일 검사를 건너뜀 (성능 향상)
+    "noUnusedLocals": false, // 사용되지 않는 로컬 변수에 대해 오류 발생 안함
+    "strictFunctionTypes": true, // 함수 타입에 대한 엄격한 검사를 비활성화
+    "useUnknownInCatchVariables": false, // `catch` 문에서 변수를 `unknown` 타입으로 처리
+    "paths": {
+      "@src/*": ["src/*"] // `@src/*` 경로 별칭을 `src/*`로 설정
+    }
+  }
+}
